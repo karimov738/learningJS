@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // das is string
+        // var myStr = "Hi I'm kebu";
+        // console.log(myStr);
+
+        // // das is number
+        // var myNum = 1488;
+        // console.log(myNum);
+
+        // // das is const
+        // const pi = 3.14;
+        // console.log(pi);
+
+        // // das is basic math
+        // var num = 20 + 20;
+        // console.log(num);
+
+        // var format18 = 744 * 2;
+        // console.log(format18);
+
+        // // also we can call and multiply decimal nums
+
+        // var decNum = 5.5; //or var decNum = 5.5 + 3.3
+        // var decNum2 = 3.3;
+        // var decNUm3 = decNum + decNum2;
+
+
+        // console.log(decNUm3)
+
+        // // increment and decrement
+
+        // var a = 5;
+        // a = a + 1; //das is nicht gut
+
+        // var b = 5
+        // b++; // ja das is gut
+
+        // // decrement is a same shit with a increment
+        // console.log(a, b)
+
+        // // finding a reminder
+
+        // var reminder;
+        // reminder = 11 % 3;
+
+        // console.log(reminder)
+
+        // // Augmented Math Operations
+
+        // var a = 3;
+        // var b = 9;
+        // var c = 7;
+
+        // // a = a + 10;
+        // // b = b + 4; das is correct but its look like shit
+        // // c = c + 3;
+
+        // a += 10;
+        // b += 4; // das is gut
+        // c += 3;
+
+        // // Escaping Literal quotes ""
+
+        // var str = "My nickname in social media is \"Kebu\""; // we using \ backslash
+        // console.log(str);
+
+        // also we can not using "\" with using ''
+
+        // var str2 = 'I hate fcking "orks"'
+        // console.log(str2);
+
+
+        /***
+        Escape sequences
+
+        \'      single quote
+        \"      double quote
+        \\      backslash
+        \n      newline
+        \t      tab
+        \r      carriage return
+        \b      backspace
+        \f      form feed
+
+        ***/
+
+        // var myStr = "First line\n \tSecond Line\nThird line";
+        // console.log(myStr);
+
+        //// We can plus 2 strings
+
+        // var ourStr = "This is start. " + "This is end";
+        // console.log(ourStr);
+
+
+        //// Plus Equals operator in string
+
+        // var myStr = "I'm Elshod "
+        // myStr += "My surname is Karimov"
+
+        // console.log(myStr)
+
+
+        //// Finding a length of string
+
+        // var lastNameLength = 0;
+        // var lastName = "Karimov"
+
+        // lastNameLength = lastName.length
+        // console.log(lastNameLength)
+
+        //// Bracket Notation
+
+        // var thirdLetteroOfLastName = ""
+        // var lastName = "Amerkhanova"
+
+        // thirdLetteroOfLastName = lastName[3] //third letter of lastName is "r"
+
+        // console.log(thirdLetteroOfLastName)
+
+        //// String Immutability
+
+        // var myStr = "Jello World!"
+        // // myStr[0] = "H" // its will be error, cuz we cant change an individual symbol of string
+        // myStr = "Hello World!" // its true way
+        // console.log(myStr)
+
+
+        //// Find the last character
+
+        // var lastName = "Karimov"
+        // var lastLetterOfLastName = lastName[lastName.length - 1] // это по сути обратный отсчет если мы введем 2 то значение будет буква "о"
+
+        // console.log(lastLetterOfLastName)
+
+
+        //// Word Blanks
+
+        // function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+        //     var result = ""
+        //     result += "The " + myAdjective + " " + myNoun + " " + myVerb + " " + "to the store" + " " + myAdverb
+
+        //     return result
+        // }
+
+        // console.log(wordBlanks("dog", "big", "ran", "quickly"))
+        // console.log(wordBlanks("bike", "slow", "flew", "slowly"))
+
+
+        //// Arrays
+
+        // var myArray = ["Elshod", 18]
+        // // Nested Array
+        // var myArray2 = [[Elshod, 18], [Rumia, 18.5]]
+
+        // Also we can modify array index
+
+        // var arrayNum = [1488, 1161, 123]
+        // arrayNum[0] = 88
+
+        // console.log(arrayNum)
+
+
+        // Acces to multi-demencioanal Arrays
+
+        // var multiDimencionalArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12 ]]]
+        // var multiArrayAcces = multiDimencionalArray[0][1] // выводит данные у которого в индексе 1 , который находится в array с индексом 0
+        // console.log(multiArrayAcces)
+
+        // Also we can push a data or array into a array
+
+        // var myArray = [["Jay", "Mary", "Jany"]]
+        // myArray.push(["Rumia", "Aliya", "Ayrat"])
+
+        // console.log(myArray)
+
+
+        // We can delete last element
+
+        // var myArray = [["Elshod", 18], ["Rumia", 18.5]]
+        // myArray.pop()
+
+        // console.log(myArray)
+
+        // Also we can first element of array with shift()
+        // and we can use shift() to push elements into a start of array
+
+        //// Functions
+
+        // function reusableFunction() {
+        //     console.log("Hello World")
+        // }
+
+        // reusableFunction()
+
+
+        // function plusFunction(a, b) {
+        //     console.log(a + b)
+        // }
+
+        // plusFunction(5, 50)
+        // plusFunction(12, 11)
+
+
+        // I dont have an acces to var in function
+
+        // explain
+
+        // function func1() {
+        //     let myNum = 88
+
+        //     console.log(myNum)
+        // }
+
+        // console.log(myNum) // its error because it var isnt global
+
+
+        // Return a value from a function
+
+        // function funcMinus(num) {
+        //     return num - 7
+        // }
+
+        // console.log(funcMinus(10)) // its 3
+
+        // function funcTimesFive(num) {
+        //     return num * 5
+        // }
+
+        // console.log(funcTimesFive(10))
+
+
+        // var changed = 0
+
+        // function change(num) {
+        //     return (num * 4) / 3
+        // }
+
+        // changed = change(10)
+
+        // console.log(change(12))
+
+
+        // Stand in Line
+
+        // function nextInline(arr, item) {
+        //     arr.push(item)
+        //     return arr.shift()
+        // }
+
+        // var testArr = [1, 2, 3, 4, 5]
+
+        // console.log("Before: " + JSON.stringify(testArr))
+        // console.log(nextInline(testArr, 6))
+        // console.log("After: " + JSON.stringify(testArr))
+
+
+
+        //// Boolean values
+
+        // function weclomeToBools() {
+        //     return true;                // das function return true
+        // }
+
+        //// If statements
+
+        // function trueOrFalse(wasThatTrue) {
+        //     if (wasThatTrue) {
+        //         return "Yes its true"
+        //     }
+        //     return "No, its no true"
+        // }
+
+        // console.log(trueOrFalse(true)) // result will be "Yes its true"
+
+
+        // equality operators
+
+        // function equalityOperator(val) {
+        //     if(val == 12){
+        //         return "Its true"
+        //     }
+
+        //     return "No its not true"
+        // }
+
+        // console.log(equalityOperator(19)) // result will be "No its not true, cuz 19 not equal to 12"
+
+
+        /*
+
+        5 == "5"	true
+        5 === "5"	false
+        10 == 10	true
+        10 === 10	true
+        true == 1	true
+        true === 1	false
+
+        == нестрогое сравнение
+        === строгое сравнение
+
+        */
+
+
+        // Inequality operator
+
+        // function noEqual(val) {
+        //     if (val != 8) {
+        //         return "no equal"
+        //     }
+
+        //     return "equal"
+        // }
+
+        // console.log(noEqual(53)) // result will be "no equal"
+
+
+        // Comparision with the Logical and Operator
+
+        // function testGreaterThan(val) {
+        //     if (val > 100) {
+        //         return "over 100"
+        //     }
+
+        //     if (val > 10) {
+        //         return "over 10"
+        //     }
+
+        //     return "10 or under"
+        // }
+
+        // console.log(testGreaterThan(150))
+        // console.log(testGreaterThan(40))
+        // console.log(testGreaterThan(10))
+
+
+        // Test with And opeator
+
+        // function testWithAnd(val) {
+        //     if (val <= 50 && val >= 25) {
+        //         return "Yes"
+        //     }
+
+        //     return "No"
+        // }
+
+        // console.log(testWithAnd(33))
+
+        // Test with Or operator
+
+        // function testWithOr(val) {
+        //     if (val < 10 || val > 20) {
+        //         return "Outside"
+        //     }
+
+        //     return "Inside"
+        // }
+
+        // console.log(testWithOr(20))
+
+        // Else statement
+
+        // function testWithElse(val) {
+        //     let result = ""
+
+        //     if (val > 5){
+        //         result = "Bigger than 5"
+        //     } else{
+        //         result = "5 or smaller"
+        //     }
+
+        //     return result
+        // }
+
+        // console.log(testWithElse(6))
+
+
+        // Else if statement
+
+        // function testElseIf(val) {
+        //     if (val > 10) {
+        //         return "Greater than 10"
+        //     } 
+        //     else if(val < 5){
+        //         return "Less than 5"
+        //     }
+        //     else{
+        //         return "Beetween 10 and 5"
+        //     }
+        // }
+
+        // console.log(testElseIf(4))
+
+        // Logical order in If Else Statements
+
+        // function orderMyLogic(val) {
+        //     if (val < 5) {
+        //         return "Less than 5"
+        //     }
+        //     else if (val < 10) {
+        //         return "Less than 10"
+        //     }
+        //     else {
+        //         return "10 or great"
+        //     }
+        // }
+
+        // console.log(orderMyLogic(4))
+
+
+        // Golf code
+
+        // let names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"]
+
+        // function golfScore(par, strokes){
+        //     if (strokes == 1) {
+        //         return names[0]
+        //     }
+        //     else if (strokes <= par - 2){
+        //         return names[1]
+        //     }
+        //     else if (strokes == par - 1){
+        //         return names[2]
+        //     }
+        //     else if (strokes == par){
+        //         return names[3]
+        //     }
+        //     else if (strokes == par + 1){
+        //         return names[4]
+        //     }
+        //     else if (strokes == par + 2){
+        //         return names[5]
+        //     }
+        //     else if (strokes >= par + 3){
+        //         return names[6]
+        //     }
+        // }
+
+        // console.log(golfScore(5, 4))
+
+
+
+        //// Switch statements
+
+        // function testSwitch(val) {
+        //     let answer = ""
+
+        //     switch (val) {
+        //         case 1:
+        //             answer = "alpha"
+        //             break
+        //         case 2:
+        //             answer = "beta"
+        //             break
+        //         case 3:
+        //             answer = "gamma"
+        //             break
+        //         case 4:
+        //             answer = "delta"
+        //             break
+
+        //         default:
+        //             answer = "stuff"
+        //             break
+        //     }
+
+        //     return answer
+        // }
+
+        // console.log(testSwitch(5))
+
+        // function sequentialSizes(val) {
+        //     let answer = ""
+
+        //     switch (val) {
+        //         case 1:
+        //         case 2:         // в этом случае 1 2 3 будут иметь значение low
+        //         case 3:
+        //             answer = "Low"
+        //             break
+        //         case 4:
+        //         case 5:
+        //         case 6:
+        //             answer = "Mid"
+        //             break
+        //         case 7:
+        //         case 8:
+        //         case 9:
+        //             answer = "High"
+        //             break
+        //     }
+
+        //     return answer
+        // }
+
+        // console.log(testSwitch(5))
+
+
+        // Returning bool values from function
+
+        // function isLess(a, b) {
+        //     return a < b
+        // }
+
+        // console.log(isLess(5, 4)) // its false cuz 4 isnt great than 5
+
+
+        //// Objects
+
+        // let myDog = {
+        //     "name": "Bobik",
+        //     "legs": 3,
+        //     "tails": 2,
+        //     "friends": []
+        // }
+
+
+        // dot notation
+
+        // let testObj = {
+        //     "hat": "beret",
+        //     "shirt": "jersey",
+        //     "shoes": "cleats"
+        // }
+
+        // let hatValue = testObj.hat
+        // let shirtValue = testObj.shirt
+
+        // console.log(hatValue, shirtValue)
+
+
+        // Bracket Notation
+
+        // let testObj = {
+        //     "an entree": "hamburger",
+        //     "my side": "veggies",
+        //     "the drink": "water"
+        // }
+
+        // let entreeValue = testObj["an entree"]
+        // let drinkValue = testObj["the drink"]
+
+        // console.log(entreeValue, drinkValue)
+
+
+        // let myObj = {
+        //     12: "Namath",
+        //     16: "Montana",
+        //     19: "Untitas"
+        // }
+
+        // let playerNumber = 16
+        // let player = myObj[playerNumber]
+
+        // console.log(player)
+
+
+        // also we can change the property of object
+
+        // let myDog = {
+        //     "name": "Bobik",
+        //     "legs": 3,
+        //     "tails": 2,
+        //     "friends": []
+        // }
+
+        // myDog.name = "Happy dog"
+
+        // // and we can add a property to an object
+
+        // myDog['bark'] = "woof!"
+
+        // let dogBark = myDog.bark
+
+        // console.log(dogValue)
+
+        // // we can delete property from object
+
+        // delete myDog.bark
+
+
+        // Objects For Lookups
+
+        // function phoneticLookup(val) {
+        //     let result = ""
+
+        //     let lookup = {
+        //         "alpha": "Adams",
+        //         "bravo": "Boston",
+        //         "charlie": "Chicago"
+        //     }
+
+        //     result = lookup[val]
+
+        //     return result
+        // }
+
+        // console.log(phoneticLookup("charlie"))
+        // console.log(phoneticLookup("alpha"))
+
+
+        // Checking has property or not
+
+        // let myObj = {
+        //     "gift": "pony",
+        //     "pet": "kitten",
+        //     "bed": "sleigh"
+        // }
+
+        // function checkObj(checkProp) {
+        //     if (myObj.hasOwnProperty(checkProp)) {
+        //         return myObj[checkProp]
+        //     }
+        //     else {
+        //         return "Not found"
+        //     }
+        // }
+
+        // console.log(checkObj("pet"))
+
+
+        // Manipulating complex objects
+
+        //     let myMusic = [{
+        //         "group": "Ramstein",
+        //         "title": "Sonne",
+        //         "release_year": 2010,
+        //         "formats": [
+        //             "CD",
+        //             "8T",
+        //             "LP"
+        //         ],
+        //         "gold": true
+        //     },
+
+        //     {   
+        //         "artist": "Beau Carnes",
+        //         "title": "Cereal Man",
+        //         "release_year": 2003,
+        //         "formats": [
+        //             "YouTube video"
+        //         ]
+        //     }
+        // ]
+
+
+        // Nested objects
+
+        // let myStorage = {
+        //     "car": {
+        //         "inside": {
+        //             "glove box": "maps",
+        //             "passenger seat": "crumbs"
+        //         },
+        //         "outside": {
+        //             "trunk": "jack"
+        //         }
+        //     }
+        // }
+
+        // let gloveBoxContents = myStorage.car.inside["glove box"]
+        // let trunkContents = myStorage.car.outside["trunk"]
+
+        // console.log(gloveBoxContents)
+        // console.log(trunkContents)
+
+
+        // let myPlants = [
+        //     {
+        //         type: "flowers",
+        //         list: [
+        //             "rose",
+        //             "tulip",
+        //             "dandelion"
+        //         ]
+        //     },
+        //     {
+        //         type: "trees",
+        //         list: [
+        //             "fir",
+        //             "pine",
+        //             "birch"
+        //         ] 
+        //     }
+        // ]
+
+        // let secondTree = myPlants[1].list[1]
+        // console.log(secondTree)
+
+
+        // Record Collection
+
+        // let collection = {
+        //     "2548": {
+        //         "album": "Sleppery When Wet",
+        //         "artist": "Bon Jovi",
+        //         "tracks": [
+        //             "Let It Rock",
+        //             "You Give Love a Bad Name"
+        //         ]
+        //     },
+
+        //     "2468": {
+        //         "album": "1999",
+        //         "artist": "Prince",
+        //         "tracks": [
+        //             "1999",
+        //             "Little Red Corvette"
+        //         ]
+        //     },
+        //     "1245": {
+        //         "artist": "Robert Palmer",
+        //         "tracks": []
+        //     },
+        //     "5439": {
+        //         "album": "ABBA Gold"
+        //     }
+        // }
+
+        // let collectionCopy = JSON.parse(JSON.stringify(collection))
+
+        // // console.log('-', collectionCopy);
+
+        // function updateRecords(id, prop, value) {
+        //     debugger
+        //     if (value === "") {
+        //         debugger
+        //         delete collection[id][prop]
+        //     } else if (prop === "tracks") {
+        //         debugger
+        //         collection[id][prop] = collection[id][prop] || []
+        //         collection[id][prop].push(value)
+        //         debugger
+        //     } else {
+        //         debugger
+        //         collection[id][prop] = value
+
+        //     }
+
+        //     return collection
+        // }
+
+        // updateRecords(2468, "tracks", "test")
+
+        // console.log(updateRecords(2548, "", ""))
+
+
+        //// While Loops
+
+        // var myArray = []
+
+        // let i = 0
+        // while(i < 5){
+        //     myArray.push(i)
+        //     i++
+        // }
+
+        // console.log(myArray)
+
+
+        //// For Loops
+
+        // let myArray = []
+
+        // for (let i = 1; i <= 10; i++) {
+        //     myArray.push(i)
+        // }
+
+        // console.log(myArray)
+
+
+        // Odd numbers with a for loop
+
+        // let myArray = []
+
+        // for (let i = 0; i < 10; i += 2) {
+        //     myArray.push(i)             // result will be 0, 2, 4, 6, 8 
+        // }
+
+        // console.log(myArray)
+
+
+        // Count backwards withh For loop
+
+        // let myArray = []
+
+        // for (let i = 10; i > 0; i -= 2){
+        //     myArray.push(i)
+        // }
+
+        // console.log(myArray)
+
+
+        // Iterate Though an array with a For loop
+
+        // let myArray = [ 2, 3, 4, 5, 6]
+        // let total = 0
+
+        // for (let i = 0; i < myArray.length; i++){
+        //     total += myArray[i]
+        // }
+
+        // console.log(total)
+
+
+        // Nesting For loops
+
+        // function multiplyAll(arr) {
+        //     let product = 1
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         for (let j = 0; j < arr[i].length; j++){
+        //             product *= arr[i][j]
+        //         }
+        //     }
+        //     return product
+        // }
+
+        // let product = multiplyAll([[1, 2], [3, 4], [5, 6, 7]])
+
+        // console.log(product)
+
+
+
+        //// Do while loop
+
+        // let myArray = []
+        // let i = 10
+
+        // do {
+        //     myArray.push(i)
+        //     i++
+
+        // } while (i < 5)
+
+
+        // console.log(i, myArray)
+
+
+        // Profile lookup
+
+        // let contacts = [
+        //     {
+        //         "firstName": "Akira",
+        //         "lastName": "Laine",
+        //         "number": "0543236543",
+        //         "likes": ["Pizza", "Coding", "Brownie Points"]
+        //     },
+        //     {
+        //         "firstName": "Hary",
+        //         "lastName": "Potter",
+        //         "number": "0994372684",
+        //         "likes": ["Hogwarts", "Magic", "Hagrid"]
+        //     },
+        //     {
+        //         "firstName": "Sherlock",
+        //         "lastName": "Holmes",
+        //         "number": "0487345643",
+        //         "likes": ["Intriguing Cases", "Violin"]
+        //     },
+        //     {
+        //         "firstName": "Kristian",
+        //         "lastName": "Vos",
+        //         "number": "unknown",
+        //         "likes": ["JavaScript", "Gaming", "Foxes"]
+        //     }
+        // ]
+
+        // function lookUpProfile(name, prop) {
+        //     for (let i = 0; i < contacts.length; i++) {
+        //         if (contacts[i].firstName === name) {
+        //             return contacts[i][prop] || "No such property"
+        //         }
+        //     }
+
+        //     return "No such contact"
+        // }
+
+        // let data = lookUpProfile("", "")
+
+        // console.log(data)
+
+
+        //// Random Fractions and Whole Numbers
+
+        // function randomFraction () {
+
+        //     return Math.random() // it fucntion return a num beetwen 0 and 1
+        // }
+
+        // console.log(randomFraction()) 
+
+
+        // let randomNumberBeetween0and19 = Math.floor(Math.random() * 20)
+
+        // function randomWholeNum () {
+
+        //     return Math.floor(Math.random() * 5)
+        // }
+
+        // console.log(randomNumberBeetween0and19)
+        // console.log(randomWholeNum())
+
+
+        // Random number between Min and Max 
+
+        // function randomRange(min, max) {
+
+        //     return Math.floor(Math.random() * (max - min + 1) + min)
+        // }
+
+        // var myRandom = randomRange(5, 10)
+        // console.log(myRandom)
+
+
+        // ParseInt Function
+
+        // function convertToInteger(str) {
+
+        //     return parseInt(str)
+        // }
+
+        // console.log(convertToInteger("1488"))
+
+
+        //// Ternary Operator
+
+        // function checkEqual(a, b) {
+        //     // if (a === b) {
+        //     //     return "true"                
+        //     // }                    // Its true way but its look like shit
+        //     // else {
+        //     //     return "false"
+        //     // }
+
+        //     return a === b ? true : false   // we can use this metod 
+        // }
+
+        // console.log(checkEqual(4, 4))
+
+
+        // Multiply Ternary Operators
+
+        // function checkSign(num) {
+
+        //     return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+        // }
+
+        // console.log(checkSign(4))
+        // console.log(checkSign(-1))
+        // console.log(checkSign(0))
+
+
+        //// Mutate an Array  deccared with const
+
+        // const s = [5, 7, 2]
+        // console.log(s)
+
+        // function editInPlace() { 
+        //     "use strict"
+
+        //     // s = [2, 5, 7]    its not true, cuz we cant reasign the const
+
+        //     s[0] = 2
+        //     s[1] = 5
+        //     s[2] = 7
+        // }
+
+        // editInPlace()
+
+        // console.log(s)
+
+
+        // Prevent Object mutation
+
+        // function freezeObj() {
+        //     "use strict"
+
+        //     const MATH_CONSTANTS = {
+        //         PI: 3.14
+        //     }
+
+        //     // Object.freeze(MATH_CONSTANTS)
+
+        //     try {
+        //         MATH_CONSTANTS.PI = 99
+        //     } catch( ex ){
+        //         console.log(ex)
+        //     }
+
+        //     return MATH_CONSTANTS
+        // }
+
+        // const PI = freezeObj
+
+
+        //// Arrow Function
+
+        // let magic = function() {
+        //     return new Date()       // das is true way but we can write this smaller
+        // }
+
+        // let unmagic = () => new Life()  // das is more smaller variant. And we also can change a let to the const
+
+
+        // const myConcat = (arr1, arr2) => arr1.concat(arr2)   // we can use parameters in arrow function like this
+        // console.log(myConcat([1, 2], [3, 4, 5]))
+
+
+        //// Higher orders with Arrow Function
+
+        // const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+
+        // const squareList = (arr) => {
+        //     debugger
+        //     const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x)
+        //     return squaredIntegers
+        // }
+
+        // const squaredIntegers = squareList(realNumberArray)
+        // console.log(squaredIntegers)
+
+
+        // Default Parameters
+
+        // const increment = (function(){
+        //     return function increment(number, value = 1) {
+        //         return number + value
+        //     }
+        // })()
+        // console.log(increment(51, 2))
+        // console.log(increment(5))
+
+
+        //// Rest Operator
+
+        // const sum = (function(){
+        //     return function sum(...args) {
+        //         return args.reduce((a, b) => a + b, 0 )
+        //     }
+        // })()
+        // console.log(sum(1, 2, 3, 4))
+
+
+        //// Spread Operator
+
+        // const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY']
+
+        // let arr2
+        // (function () {
+        //     arr2 = [...arr1]
+        //     arr1[0] = 'potato' 
+        // })()
+
+        // console.log(arr2)
+
+
+        //// Destructuring assignment
+
+        // let voxel = {x: 3.6, y: 7.4, z: 6.54}
+
+        // let x = voxel.x
+        // let y = voxel.y
+        // let z = voxel.z
+
+        // const { x : a, y : b, z : c} = voxel
+
+        // const AVG_TEMPERATURES = {
+        //     today: 77.5,
+        //     tommorow: 79
+        // }
+
+        // function getTempOfTmrw(avgTemperatures) {
+        //     "use strict"
+
+        //     const {tommorow : tempOfTomorrow} = avgTemperatures
+        //     return tempOfTomorrow
+        // }
+
+        // console.log(getTempOfTmrw(AVG_TEMPERATURES))
+
+
+        // Destructuring Assignment with Nested Objects
+
+
+        // const LOCAL_FORECAST = {
+        //     today: { min: 72, max: 83},
+        //     tomorrow: { min: 73.3, max: 84.6}
+        // }
+
+        // function getMaxOfTmrw(forecast) {
+        //     "use strict"
+
+        //     const { tomorrow : {max : maxOfTomorrow }} = forecast
+
+        //     return maxOfTomorrow
+        // }
+
+        // console.log(getMaxOfTmrw(LOCAL_FORECAST))
+
+
+        // const [z, x, , y] = [1, 2, 3, 4, 5, 6]
+        // console.log(z, x, y)
+
+        // let a = 8, b = 6
+        // (() => {
+        //     "use strict"
+        //     [a, b] = [b, a]
+        // })
+        // console.log(a)
+        // console.log(b)
+
+
+        // const source = [1, 2 , 3, 4, 5, 6, 7, 8, 9, 10]
+        // function removeFirstTwo(list) {
+        //     const [, , ...arr] = list
+        //     return arr
+        // }
+
+        // const arr = removeFirstTwo(source)
+        // console.log(arr)
+        // console.log(source)
+
+
+        // const stats = {
+        //     max: 56.78,
+        //     standart_deviation: 4.34,
+        //     median: 34.54,
+        //     mode: 23.87,
+        //     min: -0.75,
+        //     average: 35.85
+        // }
+        // const half = (function () {
+        //     return function half({ max, min}){
+        //         return (max + min) / 2.0
+        //     }
+        // })()
+
+        // console.log(stats)
+        // console.log(half(stats))
+
+
+        // Template Literals
+
+        // const person = {
+        //     name: "Zodiac Hasbro",
+        //     age: 56
+        // }
+
+        // const greeting = `Hello my name is ${person.name}!
+        // I am ${person.age} years old`
+
+        // console.log(greeting)
+
+        // const result = {
+        //     success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        //     failure: ["no-var", "var-on-top", "linebreak"],
+        //     skipped: ["id-blacklist", "no-dup-keys"]
+        // }
+
+        // function makeList(arr) {
+        //     const resultDisplayArray = []
+        //     for (let i = 0; i < arr.length; i++) {
+        //         resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li`)
+        //     }
+
+        //     return resultDisplayArray
+        // }
+        // const resultDisplayArray = makeList(result.failure)
+
+        // console.log(resultDisplayArray)
+
+
+        // Simple Fields
+
+        // const createPerson = (name, age, gender) => {
+        //     return {
+        //         name: name,
+        //         age: age,
+        //         gender: gender               // this is true way, but we can write this in small size
+
+        //     }
+        // }
+        // console.log(createPerson("Zodiac", 52, "male"))
+
+        // const createPerson = (name, age, gender) => ({ name, age, gender })     // like this), it looks better 
+        // console.log(createPerson("Zodiac", 52, "male"))
+
+
+        //// Class Syntax
+
+        // let SpaceShuttle = function(targetPlanet) {
+        //     this.targetPlanet = targetPlanet
+        // }
+
+        // let zeus = new SpaceShuttle('Jupiter')
+        // console.log(zeus.targetPlanet)
+
+
+        // function makeClass() {
+        //     class Vegetable {
+        //         constructor(name){
+        //             this.name = name
+        //         }
+        //     }
+        //     return Vegetable
+        // }
+        // const Vegetable = makeClass()
+        // const carrot = new Vegetable('carrot')
+        // console.log(carrot.name)
+
+
+
+        //// getters and setters
+
+        function makeClass() {
+            debugger
+            class ThermoStat {
+                constructor(temp) {
+                    this._temp = 5 / 9 * (temp - 32)
+                }
+                get temperature() {
+                    return this._temp
+                }
+                set temperature(updatedTemp) {
+                    this._temp = updatedTemp
+                }
+            }
+            debugger
+            return ThermoStat
+        }
+        debugger
+        const ThermoStat = makeClass()
+        const thermos = new ThermoStat(76)
+        let temp = thermos.temperature
+        thermos.temperature = 50
+        temp = thermos.temperature
+        debugger
+        console.log(temp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
